@@ -32,18 +32,16 @@ docs = [
 ]
 
 vectors = embedding_fn.encode_documents(docs)
-print("Dim:", embedding_fn.dim, vectors[0].shape)  # Dim: 768 (768,)
 
 data = [
     {"id": i, "vector": vectors[i], "text": docs[i], "name": starter_tech_stack_names[i]}
     for i in range(len(vectors))
 ]
 
-print("Data has", len(data), "entities, each with fields: ", data[0].keys())
-print("Vector dim:", len(data[0]["vector"]))
+
 res = client.insert(collection_name="starter_tech_stack_collection", data=data)
 
-print(res)
+
 
 query_vectors = embedding_fn.encode_queries(["Which framework has the best security and can be used for large-scale apps?"])
 
