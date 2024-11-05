@@ -17,6 +17,9 @@ install the dependencies
 ```
 pip install -U pymilvus
 pip install "pymilvus[model]"
+pip install "fastapi[standard]"
+pip install dependency-injector
+
 ```
 
 OR
@@ -29,4 +32,8 @@ Run the script
 
 ```
 python quickstart.py
+
+OR
+
+uvicorn Backend.main:app --reload
 ```
