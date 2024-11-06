@@ -14,9 +14,6 @@ async def search(
     request: SearchRequest,
     vector_repository: VectorRepository = Depends(lambda: Container().vector_repository())
 ):
-
-    vector_repository.setup_collection()
-    vector_repository.insert_initial_data()
     result = vector_repository.search_tech_stack(request.query, request.limit)
     
     if result:

@@ -5,7 +5,13 @@ class VectorRepository:
         self.client = MilvusClient("milvus_demo.db")
         self.embedding_fn = model.DefaultEmbeddingFunction()
         self.collection_name = "starter_tech_stack_collection"
-
+        self.initialize()
+    
+    def initialize(self):
+        """Initialize the repository with required setup"""
+        self.setup_collection()
+        self.insert_initial_data()
+    
     def setup_collection(self):
         if self.client.has_collection(collection_name=self.collection_name):
             self.client.drop_collection(collection_name=self.collection_name)

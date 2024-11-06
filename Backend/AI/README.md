@@ -35,5 +35,5 @@ python quickstart.py
 
 OR
 
-uvicorn Backend.main:app --reload
+uvicorn AI.main:app --reload
 ```

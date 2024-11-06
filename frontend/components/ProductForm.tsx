@@ -17,8 +17,7 @@ const ProductForm = ({ onSubmit }: ProductFormProps) => {
   return (
     <div className="w-full flex flex-col gap-4">
       <h2 className="text-lg text-center">
-        Tell me about the product you want to build. Include whatever technical
-        details necessary
+        Tell me about the product you want to build.
       </h2>
       <textarea
         value={input}
