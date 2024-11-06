@@ -1,11 +1,10 @@
 # Python Backend
-Backend/venv/
-Backend/**/__pycache__/
-Backend/**/*.py[cod]
-Backend/**/*$py.class
-Backend/**/*.so
-Backend/**/.Python
-
+Backend/**/venv/
+Backend/**/**/__pycache__/
+Backend/**/**/*.py[cod]
+Backend/**/**/*$py.class
+Backend/**/**/*.so
+Backend/**/**/.Python
 
 # Node/Frontend dependencies
 frontend/node_modules/
@@ -16,11 +15,11 @@ frontend/.yarn/*
 !frontend/.yarn/plugins
 !frontend/.yarn/releases
 !frontend/.yarn/versions
-\
+
 # Testing
 frontend/coverage/
-Backend/**/.pytest_cache/
-Backend/**/.coverage
+Backend/**/**/.pytest_cache/
+Backend/**/**/.coverage
 
 # Next.js
 frontend/.next/
@@ -28,9 +27,9 @@ frontend/out/
 
 # Production
 frontend/build/
-Backend/**/dist/
-Backend/**/build/
-Backend/**/*.egg-info/
+Backend/**/**/dist/
+Backend/**/**/build/
+Backend/**/**/*.egg-info/
 
 # Environment Variables
 **/.env*
