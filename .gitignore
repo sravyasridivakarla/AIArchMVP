@@ -1,10 +1,10 @@
 # Python Backend
-Backend/AI/venv/
-Backend/AI/**/__pycache__/
-Backend/AI/**/*.py[cod]
-Backend/AI/**/*$py.class
-Backend/AI/**/*.so
-Backend/AI/**/.Python
+Backend/**/venv/
+Backend/**/**/__pycache__/
+Backend/**/**/*.py[cod]
+Backend/**/**/*$py.class
+Backend/**/**/*.so
+Backend/**/**/.Python
 
 # Node/Frontend dependencies
 frontend/node_modules/
@@ -18,8 +18,8 @@ frontend/.yarn/*
 
 # Testing
 frontend/coverage/
-Backend/AI/**/.pytest_cache/
-Backend/AI/**/.coverage
+Backend/**/**/.pytest_cache/
+Backend/**/**/.coverage
 
 # Next.js
 frontend/.next/
@@ -27,9 +27,9 @@ frontend/out/
 
 # Production
 frontend/build/
-Backend/AI/**/dist/
-Backend/AI/**/build/
-Backend/AI/**/*.egg-info/
+Backend/**/**/dist/
+Backend/**/**/build/
+Backend/**/**/*.egg-info/
 
 # Environment Variables
 **/.env*
