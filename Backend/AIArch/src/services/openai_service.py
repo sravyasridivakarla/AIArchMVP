@@ -1,6 +1,6 @@
 from openai import OpenAI
 from typing import Dict, Any
-from ..core.gpt_constants import GPT_MODEL, TEMPERATURE, MAX_TOKENS
+from ..core.constants.gpt_constants import GPT_MODEL, TEMPERATURE, MAX_TOKENS
 
 class OpenAIService:
     def __init__(self, client: OpenAI):
@@ -12,7 +12,7 @@ class OpenAIService:
         user_query: str,
         model: str = GPT_MODEL,
         temperature: float = TEMPERATURE,
-        max_tokens: int = MAX_TOKENS
+        max_tokens: int = MAX_TOKENS,
     ) -> Dict[str, Any]:
         """Handles the API call to OpenAI"""
         try:
