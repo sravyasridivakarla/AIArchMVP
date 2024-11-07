@@ -1,8 +1,5 @@
-interface AnalysisResultProps {
-  result: string;
-}
-
-const AnalysisResult = ({ result }: AnalysisResultProps) => {
+const AnalysisResult = (props: { result: string }) => {
+  const { result } = props;
   if (!result) return null;
 
   return (

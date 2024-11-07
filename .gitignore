@@ -1,5 +1,6 @@
 # Python Backend
 Backend/**/venv/
+Backend/**/.venv/
 Backend/**/**/__pycache__/
 Backend/**/**/*.py[cod]
 Backend/**/**/*$py.class
@@ -33,6 +34,9 @@ Backend/**/**/*.egg-info/
 
 # Environment Variables
 **/.env*
+*.env
+*.env.*
+!.env.example
 
 # Debug
 **/npm-debug.log*
