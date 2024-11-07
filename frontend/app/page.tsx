@@ -3,15 +3,15 @@ import { useState } from "react";
 import Header from "../components/Header";
 import ProductForm from "../components/ProductForm";
 import AnalysisResult from "../components/AnalysisResult";
-import { analyzeProduct } from "../utils/api";
+import { analyzeArchitecture } from "../utils/api";
 
 export default function Home() {
   const [result, setResult] = useState<string>("");
 
   const handleSubmit = async (input: string) => {
     try {
-      const response = await analyzeProduct(input);
-      setResult(response.result);
+      const response = await analyzeArchitecture(input);
+      setResult(response);
     } catch (error) {
       console.error("Error:", error);
       // You might want to add error handling UI here
